@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div>
 
-            <div className='text-2xl text-center pt-8 border-t text-gray-200' >
+            <div className='text-2xl text-center pt-8 border-t border-gray-200' >
                 <Title text1={'ABOUT'} text2={'US'} />
             </div>
 

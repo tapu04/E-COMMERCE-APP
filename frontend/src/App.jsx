@@ -11,18 +11,24 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
+import ScrollToTop from './components/ScrollToTop';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5w] md:px-[7w] lg:px-[9vw]'>
+      <ToastContainer />
       <Navbar />
+      <SearchBar />
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collection' element={<Collection />} />
         <Route path='/login' element={<Login />} />
         <Route path='/order' element={<Order />} />
-        <Route path='/product' element={<Product />} />
+        <Route path='/products/:productId' element={<Product />} />
         <Route path='/placeOrder' element={<PlaceOrder />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/about' element={<About />} />
