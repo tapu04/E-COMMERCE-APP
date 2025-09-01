@@ -6,9 +6,10 @@ const CartTotal = () => {
 
     const { currency, delivery_fee, getCartAmount } = useContext(ShopContext);
     const formatPrice = (amount) => {
-        return new Intl.NumberFormat('en-IN', {
+        // Use USD instead of INR since the currency in ShopContext is set to "$"
+        return new Intl.NumberFormat('en-US', {
             style: 'currency',
-            currency: 'INR'
+            currency: 'USD'
         }).format(amount);
     };
 

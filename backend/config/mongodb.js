@@ -1,7 +1,9 @@
 import mongoose, { connect } from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const connectDB = async () => {
-
     mongoose.connection.on('connected', () => {
         console.log("DB connected");
     })
