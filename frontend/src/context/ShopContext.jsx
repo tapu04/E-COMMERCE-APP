@@ -10,6 +10,7 @@ const ShopContextProvider = (props) => {
     const currency = "$";
     const delivery_fee = 10; // Changed from string to number
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const adminUrl = import.meta.env.VITE_ADMIN_URL;
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
@@ -208,7 +209,7 @@ const ShopContextProvider = (props) => {
     }, [token])
 
     const value = {
-        products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, cartItems, setCartItems, addToCart, getCartCount, updateQuantity, getCartAmount, navigate, backendUrl, token, setToken, userId
+        products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, cartItems, setCartItems, addToCart, getCartCount, updateQuantity, getCartAmount, navigate, backendUrl, token, setToken, userId, adminUrl
     }
 
     return (

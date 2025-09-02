@@ -6,7 +6,7 @@ const Login = () => {
 
     const [currentState, setCurrentState] = useState('Login');
 
-    const { token, setToken, navigate, backendUrl } = useContext(ShopContext);
+    const { token, setToken, navigate, backendUrl, adminUrl } = useContext(ShopContext);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -73,7 +73,7 @@ const Login = () => {
                         <p className="text-sm text-gray-500">OR</p>
                     </div>
                 </div>
-                <a href={import.meta.env.VITE_ADMIN_URL} target="_blank" rel="noopener noreferrer">
+                <a href={adminUrl} target="_blank" rel="noopener noreferrer">
                     <button type='button' className='bg-black text-white font-light px-8 py-2 cursor-pointer w-full sm:w-auto'>
                         Continue as Admin
                     </button>
