@@ -73,7 +73,7 @@ const Login = () => {
                         <p className="text-sm text-gray-500">OR</p>
                     </div>
                 </div>
-                <a href='https://forever-admin-bsj04.vercel.app/' target="_blank" rel="noopener noreferrer">
+                <a href={import.meta.env.VITE_ADMIN_URL} target="_blank" rel="noopener noreferrer">
                     <button type='button' className='bg-black text-white font-light px-8 py-2 cursor-pointer w-full sm:w-auto'>
                         Continue as Admin
                     </button>
