@@ -13,7 +13,7 @@ const RelatedProducts = ({ category, subCategory, currentProductId }) => {
 
             // match category + subCategory
             productCopy = productCopy.filter(
-                (item) => item.category === category && item.subCategory === subCategory
+                (item) => item.category === category && item.SubCategory === subCategory
             );
 
             // ❌ exclude current product

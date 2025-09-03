@@ -83,7 +83,7 @@ const Product = () => {
                     <p>E-commerce websites typically display products or services along with detailed descriptions, images, prices, and any available variations (e.g., sizes, colors). Each product usually has its own dedicated page with relevant information.</p>
                 </div>
             </div>
-            <RelatedProducts category={productData.category} subCategory={productData.subCategory} currentProductId={productData._id} />
+            <RelatedProducts category={productData.category} subCategory={productData.SubCategory} currentProductId={productData._id} />
         </div>
 
     ) : <div className='opacity-0'></div>
