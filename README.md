@@ -78,6 +78,13 @@ RAZORPAY_KEY_ID=your_razorpay_key_id
 RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 ```
 
+Note: The backend also expects the allowed client origins for CORS to be provided via environment variables. Add these if you run frontend and admin on different hosts/ports (common in development):
+
+```
+FRONTEND_URL=http://localhost:5173
+ADMIN_URL=http://localhost:5174
+```
+
 4. Install frontend dependencies
 ```bash
 cd ../frontend
@@ -99,6 +106,8 @@ npm install
 ```
 VITE_BACKEND_URL=http://localhost:4000
 ```
+
+Note: The frontend and admin apps use the Vite variable `VITE_BACKEND_URL` to locate the backend API. Keep this value in sync with the backend `PORT` / `PORT`-based URL.
 
 ### Running the Application
 
