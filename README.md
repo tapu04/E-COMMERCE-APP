@@ -344,4 +344,4 @@ The application is configured for deployment on platforms like Vercel, Netlify, 
 
 ---
 
-\*Built with ❤️ using modern by Bhabani Shankar Jena
+\*Built with ❤️ by Bhabani Shankar Jena
